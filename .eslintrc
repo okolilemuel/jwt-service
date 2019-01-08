@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "globals": {
+        "console": true,
+        "process": true,
+        "describe": true,
+        "it": true,
+        "require": true,
+        "db": true,
+        "Joi": true,
+        "global": true,
+        "chatUpdateEventEmitter": true
+    },
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ], "no-console": "off"
+    }
+}

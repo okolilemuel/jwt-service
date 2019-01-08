@@ -1,0 +1,30 @@
+{
+  "name": "jwt-service",
+  "version": "1.0.0",
+  "description": "A simple jwt micro-service built with nodejs and express framework",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "test": "ava --verbose --timeout=60000",
+    "lint": "eslint . --max-warnings=0 --fix --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "~4.16.0",
+    "jsonwebtoken": "^8.4.0",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.7"
+  }
+}
